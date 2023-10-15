@@ -139,20 +139,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .main__up {
-    display: grid;
-    
+    display: grid;    
 }
 
 .main__up__services {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-
+    gap: 1rem; 
 }
 
 .main__up__services__box {
@@ -160,7 +158,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .material-symbols-outlined {
@@ -272,6 +269,20 @@ h1 {
     font-size: 1.5rem;
 }
 
+.nav__logo img {
+    width: 3.5rem;
+}
+
+.nav__links {
+    gap: 0.5rem;
+}
+
+.link__change a {
+    width: 7.3rem;
+    height: 2rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+}
 .header__container__image p {
     font-size: 0.6rem;
 }
@@ -303,3 +314,4 @@ h1 {
 }
 
 }
+

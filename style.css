@@ -26,6 +26,7 @@ body {
 }
 
 /*******base styles*************************/
+
 h1 {
     color: var(--text-white);
     font-size: 3rem;
@@ -47,18 +48,15 @@ h2 {
     align-items: center;
     font-size: 0.625rem;
     font-weight: 700;
-    
-
 }
 
-/*******************************************/
+/***************nav*********************/
 
 nav {
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .nav__logo img {
@@ -101,9 +99,8 @@ nav {
     color: var(--hoover);
 }
 
+/**********header*********************/
 
-
-/*******************************************/
 .header__container {
     background-image: url(img/header.jpg);
     width: 100%;
@@ -135,7 +132,8 @@ nav {
     font-size: 1.2rem;
     padding: 0.4rem;
 }
-/*******************************************/
+
+/*************main up********************/
 
 .main__up__tittle {
     display: flex;
@@ -177,7 +175,7 @@ nav {
 }
 
 
-/*******************************************/
+/***************main bottom******************/
 
 .main__bottom__tittle {
     display: flex;
@@ -213,15 +211,15 @@ nav {
 }
 
  .main__bottom__rooms__shadow {
-     background-color: rgba(0, 0, 0, 0.692);
-     width: 4rem;
-     border-bottom-right-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 4rem;
+    border-bottom-right-radius: 1rem;
  }
 
  .main__bottom__rooms__shadow h3 {
-     color: var(--text-white);
-     font-weight: 300;
-     padding-left: 0.2rem;
+    color: var(--text-white);
+    font-weight: 300;
+    padding-left: 0.2rem;
  }
 
  .main__bottom__rooms__shadow p {
@@ -239,9 +237,8 @@ nav {
     position: relative;
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
-    
-    }
+    background-repeat: no repeat;  
+}
 
 .main__bottom__img1 {
     background-image: url(img/presidential-room.jpg);
@@ -256,7 +253,7 @@ nav {
 }
 
 
-/*******************************************/
+/************media*******************/
 
 @media screen and (width < 900px) {
 .header__container {
@@ -267,8 +264,7 @@ nav {
     width: 15rem;
     height: 8rem;
     position: absolute;
-    margin-left: 100%;
-    
+    margin-left: 100%;  
 }
 
 h1 {
@@ -306,5 +302,4 @@ h1 {
     padding-bottom: 100%;
 }
 
-    
 }

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        .header__container {
+            background-image: url(img/header2.jpg);
+        }
+
+        /**************************************/
+
+        .main__form__tittle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+
+        }
+
+        .main__form__container{
+            display: grid;
+        }
+
+        .main__form__items {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem; 
+        }
+
+        .form__group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slider {
+            width: 11rem;  
+        }
+
+        .small__box {
+            width: 5.5rem;
+        }
+
+        .smallest__box {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        /**************************************/
+        .main__bottom__rooms a {
+             text-decoration: none;
+             color: var(--text-dark);
+             font-size: 1rem;
+        }
+
+        .main__image1,
+        .main__image2,
+        .main__image3,
+        .main__image4,
+        .main__image5,
+        .main__image6,
+        .main__image7,
+        .main__image8,
+        .main__image9,
+        .main__image10,
+        .main__image11,
+        .main__image12,
+        .main__image13 {
+            max-width: 100%;
+            padding-bottom: 35%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no repeat;
+        }
+
+        .main__image__rooms {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;  
+        }
+
+        .main__image1 {
+            background-image: url(img/presidential-room.jpg);
+        }
+
+         .main__image2 {
+            background-image: url(img/family-deluxe.jpg);
+        }
+
+         .main__image3 {
+            background-image: url(img/double-deluxe.jpg);
+        }
+
+         .main__image4 {
+            background-image: url(img/4.jpg);
+        }
+
+         .main__image5 {
+            background-image: url(img/5.jpg);
+        }
+
+         .main__image6 {
+            background-image: url(img/6.jpg);
+        }
+
+         .main__image7 {
+            background-image: url(img/7.jpg);
+        }
+
+         .main__image8 {
+            background-image: url(img/8.jpg);
+        }
+
+         .main__image9 {
+            background-image: url(img/9.jpg);
+        }
+
+         .main__image10 {
+            background-image: url(img/10.jpg);
+        }
+
+         .main__image11 {
+            background-image: url(img/11.jpg);
+        }
+
+         .main__image12 {
+            background-image: url(img/12.jpg);
+        }
+
+         .main__image13 {
+            background-image: url(img/13.jpg);
+        }
+
+        @media screen and (width < 900px) {
+            .main__form__container{
+                margin: 2rem;
+        }
+            .main__form__items {
+            grid-template-columns: repeat(2, 1fr);  
+        }
+
+          .main__image__rooms {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 2rem;
+        }
+
+        .smallest__box:checked + label::before {
+            content: "x";
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="nav__logo">
+                <img src="img/bonz.ai-logo-black-portrait.png" alt="">
+            </div>
+            <ul class="nav__links">
+                <li class="link__change"><a href="#">ADDES BEACH HOTEL</a></li>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="rooms.html">Rooms</a></li>
+            </ul>
+        </nav>
+
+        <header class="header__container">
+            <div class="header__container__image">
+                <h1>Luxurious Room</h1>
+                <a class="button" href="index.html">RETURN HOME</a>
+            </div>
+        </header>
+
+        <div class="main__form__tittle"><h2>Search Rooms</h2></div>
+
+        <div class="main__form__container">
+            <article class="main__form__items">
+                <div class="form__group">
+                    <div><label for="room">Room Type</label></div>
+                    <select name="room" id="room">
+                        <option value="room1">Select room</option>
+                        <option value="room1">Presidential Room</option>
+                        <option value="room2">Family Deluxe</option>
+                        <option value="room2">Double Deluxe</option>
+                        <option value="room2">Family Standard</option>
+                        <option value="room2">Family Basic</option>
+                        <option value="room2">Double Standard</option>
+                        <option value="room2">Single Deluxe</option>
+                        <option value="room2">Family Economy</option>
+                        <option value="room2">Double Basic</option>
+                        <option value="room2">Single Standard</option>
+                        <option value="room2">Double Economy</option>
+                        <option value="room2">Single Basic</option>
+                        <option value="room2">Single Economy</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <div><label for="number">Guest</label></div>
+                    <div><input type="number" min="1"></div>
+                </div>
+                <div class="form__group">
+                    <div><label>Room Price 600</label></div>
+                    <input type="range"  class="slider">
+                </div>
+                <div class="form__group">
+                    <div><label>Room Size</label></div>
+                    <div><input class="small__box" type="number" min="0" max="1000"> <input class="small__box" type="number" min="0" max="1000"></div>
+                </div>
+                <div class="form__group__small">
+                    <div>
+                        <input class="smallest__box" type="checkbox" id="checkbox1" >
+                        <label for="checkbox1">Breakfast</label>
+                    </div>
+                    <div>
+                        <input class="smallest__box" type="checkbox" id="checkbox2">
+                        <label for="checkbox2">Pets</label>
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+
+        <div  class="main__bottom__rooms">
+            <article class="main__image__rooms">
+                <section class="main__bottom__box ">
+                    <section class="main__image1">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$600</h3>
+                            <p>per night</p>
+                        </section>
+                    </section class="main__bottom__box">
+                    <section class="main__bottom__name">
+                        <h3><a href="">Presidential Room</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image2">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$500</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="deluxe-room.html">Family Deluxe</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image3">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$400</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Double Deluxe</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image4">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$400</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Family Standard</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image5">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$350</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Family Basic</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image6">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$300</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Double Standard</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image7">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$300</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Single Deluxe</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image8">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$300</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Family Economy</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image9">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$250</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Double Basic</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image10">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$250</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Single Standard</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image11">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$200</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Double Economy</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image12">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$150</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Single Basic</a></h3>
+                    </section>
+                </section>
+
+                <section class="main__bottom__box">
+                    <section class="main__image13">
+                        <section class="main__bottom__rooms__shadow">
+                            <h3>$100</h3>
+                            <p>per night</p>
+                        </section>
+                    </section>
+                    <section class="main__bottom__name">
+                        <h3><a href="">Single Economy</a></h3>
+                    </section>
+                </section>
+            </article>
+
+            
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

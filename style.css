@@ -25,7 +25,7 @@ body {
     padding-bottom: 4rem;
 }
 
-/*******base styles*************************/
+/***************base styles*****************/
 
 h1 {
     color: var(--text-white);
@@ -99,7 +99,7 @@ nav {
     color: var(--hoover);
 }
 
-/**********header*********************/
+/*************header*******************/
 
 .header__container {
     background-image: url(img/header.jpg);
@@ -133,7 +133,7 @@ nav {
     padding: 0.4rem;
 }
 
-/*************main up********************/
+/***************main up*******************/
 
 .main__up__tittle {
     display: flex;
@@ -172,7 +172,7 @@ nav {
 }
 
 
-/***************main bottom******************/
+/*****************main bottom******************/
 
 .main__bottom__tittle {
     display: flex;
